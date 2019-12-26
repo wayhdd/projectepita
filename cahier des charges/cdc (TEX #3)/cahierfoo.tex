@@ -1,0 +1,446 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[frenchb]{babel}
+\usepackage[colorlinks=true, pdfstartview=FitV, linkcolor=black,
+      citecolor=blue, urlcolor=blue]{hyperref}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{eurosym}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{graphicx}
+
+\definecolor{blue}{rgb}{0.13,0.29,0.46}
+\definecolor{red}{rgb}{1,0,0}
+\definecolor{couleur_titre}{rgb}{0.20, 0.45, 0.80}
+\definecolor{couleur_nom}{rgb}{0.11, 0.6, 0.18}
+
+
+
+\pagestyle{fancyplain} \chead{}\lhead{\textit{Team FOO}} \rhead{\textcolor{couleur_titre}{\emph{\textit{Project: HGF}}}}
+
+
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+{\fontsize{20}{24}{\textcolor{red}{\textbf{{\textcolor{couleur_titre}{Project: HGF}}}}}}
+\par
+{\textcolor{blue}{\textbf{Team Foo}}}
+\end{center}
+\vspace*{0.5cm}
+\begin{figure}[htbp]
+   \begin{center}
+      \includegraphics{team_fooo2.jpg}
+   \end{center}
+\end{figure}
+
+
+
+
+
+\vspace*{0.5cm}
+\par
+\begin{center}
+\fontsize{16}{20pt}
+\textbf{Félix}
+\emph{\textcolor{couleur_nom}{Wurzag }}
+\textbf{Abecassis}
+(\emph{abecas\_e})
+\newline
+\textbf{Christopher}
+\emph{\textcolor{couleur_nom}{Vjeux }}
+\textbf{Chedeau}
+(\emph{chedea\_c})
+\newline
+\textbf{Vladimir}
+\emph{\textcolor{couleur_nom}{Vizigrou }}
+\textbf{Nachbaur}
+(\emph{nachba\_v})
+\newline
+\textbf{Alban}
+\emph{\textcolor{couleur_nom}{Neo }}
+\textbf{Perillat-Merceroz}
+(\emph{perill\_a})
+\newline
+\end{center}
+
+
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+\chapter*{\textcolor{blue}{\emph{Introduction}}}
+Dans le présent cahier des charges fonctionnel, notre équipe, la \textit{Fooo Team}, présente son projet informatique de première année à l'EPITA qui sera 
+réalisé sur une durée d'environ 6 mois.\newline
+\par
+Nous avons décidé à l'unanimité de nous lancer dans la création d'un jeu de stratégie temps réel ou RTS, 
+projet assez difficile en soi, mais qui représente un véritable défi attrayant, nous obligeant à mener de notre côté d'importantes recherches personnelles.
+\newline
+\par
+De plus, la communication et l'esprit d'équipe seront de rigueur pour réussir à nous entraider en fonction des niveaux de chacun et pour nous mettre d'accord sur les mécanismes principaux du jeu afin de faciliter la mise en commun du travail individuel.
+\newline
+\par
+Nous avons décidé d'aborder ce projet d'une manière nouvelle pour la plupart d'entre nous, 
+tout d'abord en s'investissant réellement dans le projet, mais aussi en effectuant un vrai travail d'équipe, ce que nous avons rarement eu l'occasion de faire au lycée.
+\newline
+\par
+Nous allons détailler par la suite les différents aspects de notre projet, ainsi que les objectifs de rentabilité, de coûts et les délais que nous nous sommes fixés.
+\newline
+\par
+
+\newpage
+\chapter{\textcolor{blue}{\mbox{\emph{Notre groupe de projet}}}}
+\section{\textcolor{blue}{Origines du groupe}}
+Notre groupe ne s'est pas formé aléatoirement, pas plus qu'il n'est la fusion de deux couples d'amis rassemblés par la contrainte du nombre de personnes.
+Nous nous sommes plutôt associés les uns avec les autres vers le début de l'année et nous nous connaissons donc tous relativement bien.
+Notre travail d'équipe et nos relations dépassent désormais le cadre du projet informatique.
+\newline
+\par
+Quoi qu'il en soit, un tel défi aura le bénéfice de mettre à l'épreuve une collaboration que nous espérons tous durable.
+Nous avons commencé à faire connaissance au cours du séminaire, rassemblés par des passions communes, et notre entente a été immédiate.
+Nous avons alors décidé de nous unir pour réaliser ce projet.
+
+\newpage
+\section{\textcolor{blue}{Les membres}}
+\subsection{Félix (Wurzag)}
+\par
+Je suis passionné par l'informatique depuis mon plus jeune âge, mais je n'avais jamais tenté d'apprendre un quelconque langage informatique par moi-même. Toutefois, réalisant en terminale l'étendue et la richesse des métiers de l'informatique je décidai que le moment d'approfondir ma passion était venu, ainsi entrai-je à l'EPITA avec une grande motivation dont j'aurai besoin pour mener à bien ce projet.
+
+
+
+
+\subsection{Christopher (Vjeux)}
+\par
+Joueur depuis toujours et dans une optique d'optimisation j'ai voulu en savoir plus sur la façon dont fonctionnaient les mécanismes des jeux.
+Cela à commencé sur Diablo 2 puis a pris de l'ampleur sur Warcraft III grâce à son éditeur de cartes puis finalement sur World of Warcraft du fait des modifications d'interface.
+Etant donné mes connaissances approfondies du jeu Warcraft III, ce projet va me permettre de les mettre en application.
+
+\subsection{Vladimir (Vizigrou)}
+\par
+J'ai commencé la programmation assez tôt, en bidouillant un peu à l'âge de 10 ans sur Visual Basic.
+Au collège je n'ai plus écrit une seule ligne de code, mais mon goût pour la programmation m'a tout de même rattrapé au lycée quand j'ai eu ma première calculatrice programmable.
+\newline
+Je suis très intéressé par l'expérience que va m'apporter le projet de sup, qui sera mon premier 'vrai' projet.
+Je compte notamment sur ce projet pour approfondir mes faibles connaissances en programmation objet, indispensable pour notre projet, ainsi qu'en OpenGL, 
+que je n'ai que très peu utilisé auparavant.
+
+\subsection{Alban (Neo)}
+\par
+Amené comme beaucoup dans le monde de l'informatique par le jeu vidéo, ma passion pour l'informatique s'étendra très vite au delà du loisir vidéo-ludique. 
+Ayant beaucoup bidouillé un peu de tout sans jamais vraiment approfondir, je profiterai de cette première année à l'EPITA, 
+et en particulier de ce projet pour me plonger sérieusement dans un projet de cette envergure.
+
+\section{\textcolor{blue}{Genèse et nature du projet}}
+Notre groupe ayant été fondé suffisament tôt, nous avons dès lors pu réfléchir à la nature du projet.
+Notre choix du type d'application s'est rapidement porté sur les jeux vidéos, comme seule chance de choisir un sujet dans ce domaine surant notre cursus à l'EPITA.
+\newline
+Il restait alors à décider d'un genre de jeu, après quelques divagations, hésitations et désaccords mineurs, nous sommes tombés d'accord sur l'idée de faire
+un jeu de Stratégie en Temps Réel (STR, appelé RTS en Anglais).
+\newline
+Cette idée nous est venue du fait que nous sommes quatre joueurs réguliers de certains classiques du genre, tels que Warcraft III pour n'en citer qu'un. Certains d'entre 
+nous ont même déjà un minimum d'expérience sur l'éditeur de cartes de ce jeu.
+\newline
+Quant à trancher entre CAML et Delphi, très rapidement nous avons privilégié le langage Delphi, qui en tant que langage impératif nous semble plus adapté pour un projet de ce genre, 
+mais surtout ils nous sera plus facile de trouver et d'adapter les idées de programmeurs de jeux de ce genre, 
+et donc de passer moins de temps à adapter des algorithmes, voire du code C dans notre programme.
+
+\newpage
+\chapter{\textcolor{blue}{\emph{But et intérêts du projet}}}
+
+\section{\textcolor{blue}{Qu'est ce qu'un RTS ?}}
+Les RTS sont régis par certainrègles basiques qui permettent d'inscrire un jeu dans ce type.
+Il s'agit tout d'abord d'un jeu de stratégie multijoueur, dans lequel chaque doit gérer une communauté, voire une civilisation, en lui donnant des ordres.
+Le joueur doit peu à peu accumuler des ressources en développant des techniques de récolte et autres afin de créer des bâtiments et des unités de combat.
+Le but final est d'être meilleur que les autres joueurs, en les faisant capituler ou en les éradiquant jusqu'au dernier par la force.
+\newline
+Ce qui caractérise de tels jeux est bien sur la liberté de se développer comme on le souhaite, en construisant certains bâtiments, en recherchant des améliorations spécifiques, en décidant du moment propice pour attaquer ses ennemis.
+\par
+Pour pouvoir le qualifier de "stratégique", il nous faudra donc offrir des choix et des libertés aux joueurs, 
+nous essaierons un maximum de faire en sorte qu'il n'y ai jamais une seule méthode qui marche à chaque fois, ce qui est un des points forts dans ce type de jeu, mais aussi
+une difficulté supplémentaire pour le projet.
+
+\begin{figure}[h] 
+\begin{center}
+\includegraphics[scale=0.6]{candc.jpg}
+\caption{Command \& Conquer : Conflit du Tibérium, sorti en 1996}
+\end{center}
+\end{figure}
+
+\newpage
+
+\section{\textcolor{blue}{\emph{Environnement du jeu}}}
+Notre jeu se déroulera dans un univers médiéval-fanstastique et essayera de différencier plusieurs types de peuples par des batiments et des unités aux caractéristiques diverses.
+Il faudra amasser deux types de ressources distincts, les deux étants nécessaires.
+Nous voulons faire évoluer le joueur dans un environnement en 3 dimensions.
+Le joueur devra avoir le choix entre plusieurs cartes de jeu, qui seront chacune délimitées par des obstacles géographiques.
+Le but est toujours d'éliminer l'autre, sans négliger son propre village, car la perte de tous ses bâtiments engendre la défaite immédiate.
+
+\newpage
+
+\section{\textcolor{blue}{Intérêts}}
+Nous sommes conscients de la difficulté et pensons avoir une idée assez précise du travail que peut représenter un tel projet.
+Cepdendant cet aspect de défi rend le projet plus stimulant et enrichissant pour nous tous. 
+Il va en effet falloir que nous allions au-delà des bases que les cours nous donnent, 
+pour apprendre à chercher par nous même comment contourner certains problèmes, et à trouver des solutions adaptées.
+
+\subsection{Capacité d'adaptation}
+\par
+Nous devrons travailler avec des contraintes.
+En effet, le Delphi est un langage qui nous est à tous les quatre inconnu, ou simplement qui nous rebutte à cause de certains aspects.
+Il nous est pourtant obligatoire de choisir entre le Delphi et le CAML, tout comme de choisir entre Opengl et Direct3D.
+Le choix de la bibliothèque graphique est abordé dans la $3^{eme}$ partie.
+
+\subsection{Recherches personnelles}
+Un ingénieur informaticien se doit d'être autodidacte pour s'adapter aux nouvelles technologies en évolution perpétuelle.
+Nous devons donc acquérir le réflexe de rechercher par nous-même toutes les informations, qualité indispensable pour mener à bien des projetscomme celui que nous avons choisi.
+
+\subsection{Délais}
+Nous devons apprendre à tenir des délais, à nous conformer au cahier des charges, en effet, il est difficile de prévoir si les délais seront respectés en l'état actuel de choses puisque nous risquons de rencontrer des difficultés imprévues.
+Nous gradons toutefois à l'esprit notre objectif : obtenir un produit fini, jouable et commercialisable.
+
+\newpage 
+
+\subsection{Travail en équipe}
+Nous devons également apprendre à travailler en équipe, à prendre des décisions communes,
+ou encore à nous motiver mutuellement en cas d'obstacle majeur rencontré par l'un des membres du groupe.
+Les différences de niveau et d'expérience entre nous rajoutent des points de réflexion, 
+nous avons dû réfléchir longuement à la répartition de certaines tâches dans un souci d'équité, mais aussi dans 
+le respect des compétences et préférences de chacun.
+
+\vspace*{0.5cm}
+\begin{center}
+\includegraphics[scale=0.8]{Calvin.jpg}
+\end{center}
+
+\chapter{\textcolor{blue}{\emph{Découpage du projet}}}
+\section{\textcolor{blue}{Les différentes tâches}}
+\subsection{Moteur 3D}
+Nous avons choisi OpenGL comme bibliothèque graphique. Nous avons porté notre choix sur OpenGL plutôt que sur direct3D pour pouvoir facilement continuer notre projet sur une machine quelconque.
+Nous avons par exemple constaté lors de la conférence OpenGL/DirectX la difficulté à mettre en place les machines pour développer avec DirectX.
+Un autre point désisif a été le fait que nous avons pu expérimenter OpenGL durant cette conférence.
+Les modèles des unités et des bâtiments seront en 3D, nous utiliserons des modèles créés intégralement par des fans et présents sur le site wc3campaigns.
+Une des premières tâches sera donc de créer un moteur 3D, soit un ensemble de fonctions qui permettra d'afficher facilement des fichiers de modèles.
+
+\subsection{Interface}
+L'interface a un rôle très important dans un jeu de stratégie. Elle doit être claire intuitive et ergonomique.
+La base de l'interface sera développée dans un premier temps, puis nous organiserons un travail de réflexion avant de nous attaquer à un système d'interface évolutif basé sur un système de script.
+
+\newpage
+
+\subsection{Déplacement des unités}
+Afin que le jeu soit le plus réaliste possible, le joueur devant gérer plusieurs unités à la fois, doit pouvoir leur donner des ordres sans avoir à les diriger pendant toute l'exécution de l'ordre.
+Il faut donc donner au joueur la possibilité de sélectionner plusieurs unités à la fois, et qu'une fois un ordre de déplacement donné, les unités trouvent elles-même le chemin qu'elles doivent emprunter.
+Pour éviter des collisions graphiques entre les personnages, le décor, et les autres personnages, il est nécessaire d'avoir recours à des système de calcul de chemin, et de gestion de collision.
+
+
+Le but recherché est que finalement, une fois un ordre de déplacement est donné à un groupe d'unités, ces dernières puissent se déplacer d'une manière assez fluide, et intelligente.
+
+
+
+
+\subsection{Unités, Bâtiments}
+Bien entendu, il faudra pouvoir sélectionner une, puis plusieurs unités en même temps, ainsi qu'il devra être possible de créer des bâtiments sur la carte et de créer des unités dans ces bâtiments.
+
+\subsection{Réseau}
+Notre jeu sera exclusivement multijoueur, il est donc primordial de créer un système de réseau fiable, qui permettra de jouer sur Internet ou en réseau local.
+
+\subsection{Gestion, Structuration, Utilisation des données}
+Le jeu utilisera de nombreuses données, telles ques les modèles 3D, les cartes de jeu, ou encore les sons et des fichiers contenant les spécification des unités.
+Il faudra donc à la fois bien organiser les données extérieures, stoquées dans des fichiers pour des modifications ultérieures plus simples, mais aussi pendant que le jeu
+tournera, utiliser un système de manipulation des données suffisament performant et intuitif pour que les parties différentes s'assurent de travailler sur les mêmes bases, 
+et faciliter ainsi la mise en commun du projet.
+
+\newpage
+
+\subsection{Son}
+Pour rendre le jeu plus vivant, nous utiliserons des échantillons de son libres de droits.
+Il est également intéressant lorsque l'on déplace des unités d'avoir une réaction de leur part, nous prévoyons donc de donner des voix aux personnages du jeu.
+
+\subsection{Marketing, Publicité}
+Il s'agit de faire un site web agréable, clair et simple, basé sur le thème du jeu, mais aussi de répandre la bonne parole à nos connaissances avec des produits dérivés à l'effigie du jeu ainsi que la distribution du jeu complet avec boîtier et notice.
+
+\subsection{Budget}
+
+\par
+Nous ne comptons pas dépenser des sommes folles pour des logiciels payants alors que certains logiciels gratuits répondent à nos besoins.
+De plus, avec l'EPITA nous avons déja d'avoir accès à certains logiciels payants qui nous serons utiles pour le développement.
+La force de notre équipé réside principalement dans le fait que nous sommes un des seuls groupes à réussir à maintenir un budget inférieur à 10.000 euros.
+
+\vspace*{0.5cm}
+
+\begin{center}
+\begin{tabular}{l l}
+{\textbf{Borland Delphi 2007}} & \textbf{0 \euro}\\
+{\textbf{Adobe Photoshop CS3}} & \textbf{0 \euro}\\
+{\textbf{Nom de domaine}} & \textbf{6 \euro}\\
+{\textbf{CD-ROM, jaquette, manuel}} & \textbf{20 \euro}\\
+{\textbf{Impression de T-shirts}} & \textbf{80 \euro}\\
+\hline
+{\textbf{Estimation du total}} & \textbf{> 100 \euro}\\
+\end{tabular}
+\end{center}
+
+
+
+\begin{figure}[h] 
+\begin{center}
+\includegraphics[scale=2.6]{calvin_money.jpg}
+\end{center}
+\end{figure}
+
+
+
+\newpage
+\section{\textcolor{blue}{Répartition des tâches}}
+
+\textbf{+} : Doit réaliser cette tâche.
+\par
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\cline{2-5}
+\multicolumn{1}{ c|}{ } & {\textbf{Félix}} & {\textbf{Christopher}} & {\textbf{Vladimir}} & {\textbf{Alban}}\\
+\hline
+{\textbf{Environnement de jeu}} & \textbf{+} &  &  &  \\
+\hline
+{\textbf{Organisation des données}} & \textbf{+} &  &  &  \\
+\hline
+{\textbf{Moteur 3D}} &  & \textbf{+} &  &  \\
+\hline
+{\textbf{Interface}} &  & \textbf{+} &  &  \\
+\hline
+{\textbf{Pathfinding}} &  &  & \textbf{+} &  \\
+\hline
+{\textbf{Collisions}} &  &  & \textbf{+} &  \\
+\hline
+{\textbf{Réseau}} &  &  &  & \textbf{+} \\
+\hline
+{\textbf{Site Web}} &  &  &  & \textbf{+} \\
+\hline
+{\textbf{Marketing/Publicité}} &  &  &  & \textbf{+} \\
+\hline
+{\textbf{Sons - Voix}} & \textbf{+} & \textbf{+} & \textbf{+} & \textbf{+} \\
+\hline
+\end{tabular}
+\end{center}
+
+
+\section{\textcolor{blue}{Planning}}
+Légende :
+\par
++ : Ebauche
+\par
+++ : Avancé
+\par
++++ : Terminé
+\newline
+\par
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\cline{2-5}
+\multicolumn{1}{ c|}{\textbf{Première Soutenance}} & {\textbf{Félix}} & {\textbf{Christopher}} & {\textbf{Vladimir}} & {\textbf{Alban}}\\
+\hline
+{\textbf{Environnement de jeu}} & \textbf{+} &  &  &  \\
+\hline
+{\textbf{Organisation des données}} & \textbf{+} &  &  &  \\
+\hline
+{\textbf{Moteur 3D}} &  & \textbf{+} &  &  \\
+\hline
+{\textbf{Interface}} &  & \textbf{+} &  &  \\
+\hline
+{\textbf{Pathfinding}} &  &  & \textbf{+} &  \\
+\hline
+{\textbf{Collisions}} &  &  & \textbf{+} &  \\
+\hline
+{\textbf{Réseau}} &  &  &  & \textbf{+} \\
+\hline
+{\textbf{Site Web}} &  &  &  & \textbf{++} \\
+\hline
+{\textbf{Marketing/Publicité}} &  &  &  & \textbf{+} \\
+\hline
+{\textbf{Sons - Voix}} &  &  &  &  \\
+\hline
+\end{tabular}
+\vspace*{1cm}
+\begin{tabular}{|c|c|c|c|c|}
+\cline{2-5}
+\multicolumn{1}{ c|}{\textbf{Deuxième Soutenance}} & {\textbf{Félix}} & {\textbf{Christopher}} & {\textbf{Vladimir}} & {\textbf{Alban}}\\
+\hline
+{\textbf{Environnement de jeu}} & \textbf{+} &  &  &  \\
+\hline
+{\textbf{Organisation des données}} & \textbf{++} &  &  &  \\
+\hline
+{\textbf{Moteur 3D}} &  & \textbf{++} &  &  \\
+\hline
+{\textbf{Interface}} &  & \textbf{+} &  &  \\
+\hline
+{\textbf{Pathfinding}} &  &  & \textbf{++} &  \\
+\hline
+{\textbf{Collisions}} &  &  & \textbf{+} &  \\
+\hline
+{\textbf{Réseau}} &  &  &  & \textbf{++} \\
+\hline
+{\textbf{Site Web}} &  &  &  & \textbf{+++} \\
+\hline
+{\textbf{Marketing/Publicité}} &  &  &  & \textbf{++} \\
+\hline
+{\textbf{Sons - Voix}} & \textbf{+} & \textbf{+} & \textbf{+} & \textbf{+} \\
+\hline
+\end{tabular}
+\vspace*{1cm}
+\begin{tabular}{|c|c|c|c|c|}
+\cline{2-5}
+\multicolumn{1}{ c|}{\textbf{Troisieme Soutenance}} & {\textbf{Félix}} & {\textbf{Christopher}} & {\textbf{Vladimir}} & {\textbf{Alban}}\\
+\hline
+{\textbf{Environnement de jeu}} & \textbf{++} &  &  &  \\
+\hline
+{\textbf{Organisation des données}} & \textbf{++} &  &  &  \\
+\hline
+{\textbf{Moteur 3D}} &  & \textbf{+++} &  &  \\
+\hline
+{\textbf{Interface}} &  & \textbf{++} &  &  \\
+\hline
+{\textbf{Pathfinding}} &  &  & \textbf{+++} &  \\
+\hline
+{\textbf{Collisions}} &  &  & \textbf{++} &  \\
+\hline
+{\textbf{Réseau}} &  &  &  & \textbf{++} \\
+\hline
+{\textbf{Site Web}} &  &  &  & \textbf{+++} \\
+\hline
+{\textbf{Marketing/Publicité}} &  &  &  & \textbf{+++} \\
+\hline
+{\textbf{Sons - Voix}} & \textbf{++} & \textbf{++} & \textbf{++} & \textbf{++} \\
+\hline
+\end{tabular}
+\vspace*{1cm}
+\begin{tabular}{|c|c|c|c|c|}
+\cline{2-5}
+\multicolumn{1}{ c|}{\textbf{Soutenance Finale}} & {\textbf{Félix}} & {\textbf{Christopher}} & {\textbf{Vladimir}} & {\textbf{Alban}}\\
+\hline
+{\textbf{Environnement de jeu}} & \textbf{+++} &  &  &  \\
+\hline
+{\textbf{Organisation des données}} & \textbf{+++} &  &  &  \\
+\hline
+{\textbf{Moteur 3D}} &  & \textbf{+++} &  &  \\
+\hline
+{\textbf{Interface}} &  & \textbf{+++} &  &  \\
+\hline
+{\textbf{Pathfinding}} &  &  & \textbf{+++} &  \\
+\hline
+{\textbf{Collisions}} &  &  & \textbf{+++} &  \\
+\hline
+{\textbf{Réseau}} &  &  &  & \textbf{+++} \\
+\hline
+{\textbf{Site Web}} &  &  &  & \textbf{+++} \\
+\hline
+{\textbf{Marketing/Publicité}} &  &  &  & \textbf{+++} \\
+\hline
+{\textbf{Sons - Voix}} & \textbf{+++} & \textbf{+++} & \textbf{+++} & \textbf{+++} \\
+\hline
+\end{tabular}
+\end{center}
+
+\end{document}
+
+
+
